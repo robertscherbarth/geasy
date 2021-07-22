@@ -14,6 +14,10 @@ func Warnf(msg string, args ...interface{}) {
 	fmt.Printf(msg+"\n", args...)
 }
 
+func Errorf(msg string, args ...interface{}) {
+	fmt.Printf(msg+"\n", args...)
+}
+
 func Infof(msg string, args ...interface{}) {
 	fmt.Printf(msg+"\n", args...)
 }
