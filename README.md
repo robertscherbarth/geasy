@@ -6,6 +6,12 @@
 - go
 - GOPATH env must be set
 
+## Install
+
+```bash
+make install # this will build the cli and copy it into go bin path
+```
+
 ## Authentication
 
 In this example, Google Application Default Credentials are used for authentication.
