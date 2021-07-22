@@ -31,6 +31,8 @@ func newRuntimeConfigurationCmd() *cobra.Command {
 				cobra.CheckErr(errors.New("project has to be set"))
 			}
 
+			//TODO: move this to operations in a clean client
+
 			/*var currentProject, currentConfig, currentVariables string
 			runtimeconfigService.Projects.Configs.Variables.Get(fmt.Sprintf("projects/%s/configs/%s/variables/%s", currentProject, currentConfig, currentVariables))
 			*/

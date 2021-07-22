@@ -1,5 +1,6 @@
 # geasy
 
+`geasy` is a small wrapper cli tool that use the gcp api's to make it little more usable especially for more than one project. 
 
 ## Requirements: 
 
