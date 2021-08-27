@@ -14,6 +14,7 @@ func NewGetCmd() *cobra.Command {
 
 	cmdGet.AddCommand(
 		newRuntimeConfigurationCmd(),
+		newIAMCmd(),
 	)
 
 	return cmdGet
