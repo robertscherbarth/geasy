@@ -20,3 +20,17 @@ func (i *IAM) ListServiceAccounts(project string) (*iam.ListServiceAccountsRespo
 
 	return response, nil
 }
+
+func (i *IAM) GetPermissions(project, account string) (*iam.QueryTestablePermissionsResponse, error) {
+	service, err := iam.NewService(context.Background())
+	if err != nil {
+		return nil, err
+	}
+
+	req := iam.QueryTestablePermissionsRequest{
+		FullResourceName: "//cloudresourcemanager.googleapis.com/projects/" + project,
+	}
+	res, err := service.Permissions.QueryTestablePermissions(&req).Do()
+
+	return res, nil
+}

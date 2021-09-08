@@ -15,8 +15,8 @@ func newIAMCmd() *cobra.Command {
 
 	cmdIAM := &cobra.Command{
 		Use:     "iam",
-		Short:   "show current runtime configuration",
-		Example: "geasy get runtime --project my-project",
+		Short:   "show current available service accounts",
+		Example: "geasy get iam --project my-project",
 		Run: func(cmd *cobra.Command, args []string) {
 			if project == "" {
 				cobra.CheckErr(errors.New("project has to be set"))
